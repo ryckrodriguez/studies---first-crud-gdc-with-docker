@@ -1,0 +1,14 @@
+<files ~ "^.*\.([Hh][Tt][Aa])">
+order allow,deny
+deny from all
+satisfy all
+</files>
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+
+RewriteRule ^([^/]*)/?$ index.php?page=$1 [NC,L]
+RewriteRule ^chamar/ajax/?$ Class/index.php [NC,L]
+</IfModule>

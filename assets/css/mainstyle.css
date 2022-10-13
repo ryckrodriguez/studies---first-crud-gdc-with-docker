@@ -1,0 +1,144 @@
+html {
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    width:100%;
+}
+
+#format_table_body td{
+    padding: 10px 23px;
+}
+
+#format_table{
+    width: 100%;
+    margin: 0px;
+}
+
+.up_desc i{
+    float: left;
+    font-size: 20px;
+}
+
+.row_opacity{
+    opacity: 0.5;
+}
+
+tr:first-child a.up, tr:last-child a.desc{
+    display: none;
+}
+
+.format_row{
+    cursor: grab;
+    width: 10%;
+}
+
+.format_responsavel{
+    padding: 0px;
+}
+
+a.changeAdd:hover, a.changeDelete:hover{
+    cursor: pointer;
+}
+
+a.desc:hover, a.up:hover{
+    cursor: pointer;
+    color: #FF0000;
+}
+
+tbody tr:nth-child(1n):hover {
+    background-color: rgb(230, 230, 260);
+}
+
+#input_busca_endereco {
+    position: absolute;
+    right: 20px;
+    top: 115px;
+    z-index: 2;
+    width: 175px;
+    border-radius: 30px;
+    font-family: "FontAwesome";
+}
+
+#map {
+    height: 200px;
+    width: 100%;
+    margin: 5px;
+}
+
+#formulario_funcionario input {
+    margin-bottom: 10px;
+    border: 0px solid white;
+    border-bottom: 1px solid black;
+}
+
+#formulario_funcionario {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 3%;
+    margin: 5%;
+}
+
+.display {
+    display: none;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+footer {
+    text-align: right;
+    color: gray;
+    padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+
+    #myGrid {
+        min-width: 0;
+        width: 100%;
+    }
+
+}
